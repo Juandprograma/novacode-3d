@@ -100,14 +100,14 @@ const STATION_CONTENT: Record<string, StationContent> = {
         highlight: false,
       },
       { 
-        name: "AI Photo Studio", 
-        desc: "Modelos de visión computacional para generación y edición de imágenes de producto.",
-        tags: ["Python", "TensorFlow", "React"],
+        name: "Next Nurse Go", 
+        desc: "Plataforma web enfocada en el sector de salud y educación médica, desarrollada con alto rendimiento y SEO optimizado.",
+        tags: ["Next.js", "Tailwind CSS", "SEO"],
         highlight: true,
       },
       { 
         name: "Novacode Engine", 
-        desc: "Infraestructura escalable para despliegue automático de aplicaciones web.",
+        desc: "Marca y ecosistema de desarrollo web independiente enfocado en ingeniería de sistemas y arquitecturas robustas.",
         tags: ["Docker", "Kubernetes", "CI/CD"],
         highlight: false,
       },
@@ -127,13 +127,12 @@ const STATION_CONTENT: Record<string, StationContent> = {
     profile: {
       name: "Juan Diego Mahecha",
       role: "Founder & Lead Developer",
-      semestre: "8vo Semestre Ing. Sistemas",
+      semestre: "Noveno Semestre Ing. Sistemas",
       location: "Bogotá, Colombia",
     },
     ecosystem: [
-      { name: "Novacode", role: "Desarrollo Web" },
+      { name: "Novacode", role: "Desarrollo Web & software" },
       { name: "Dukes", role: "Perfumería Virtual" },
-      { name: "El Rincón del Café", role: "E-commerce" },
     ],
     style: "orange",
   },
@@ -211,12 +210,16 @@ export function StationPanels({ vehiclePosition, activeStation, onClose }: Stati
         transition: "transform 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
       }}
     >
-      {/* Close button - 48x48px para cumplir mínimo táctil 44px */}
+      {/* Close button - Posicionado con mayor separación y aislamiento táctil total */}
       <button
         onClick={(e) => handleClose(e)}
-        onTouchStart={(e) => { e.preventDefault(); e.stopPropagation(); handleClose(); }}
-        className="absolute top-20 right-6 w-12 h-12 flex items-center justify-center rounded-full hover:bg-white/10 transition-colors cursor-pointer"
-        style={{ zIndex: 101, pointerEvents: "auto" as const }}
+        onTouchEnd={(e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          handleClose();
+        }}
+        className="absolute top-6 right-6 w-12 h-12 flex items-center justify-center rounded-full bg-black/60 border border-white/20 hover:bg-white/20 transition-colors cursor-pointer"
+        style={{ zIndex: 9999, pointerEvents: "auto" as const }}
         aria-label="Cerrar panel"
       >
         <X className="w-6 h-6" style={{ color: colors.primary, pointerEvents: "none" }} />

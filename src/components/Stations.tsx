@@ -67,7 +67,7 @@ const STATIONS: Record<string, StationConfig> = {
     icon: MessageCircle,
     color: "#25D366",
     radius: 12,
-    phone: "573006779183cd",
+    phone: "573006779183",
   },
 };
 
@@ -201,12 +201,7 @@ function ContactStation({
 }) {
   const [triggered, setTriggered] = useState(false);
 
-  useEffect(() => {
-    if (isNearby && !triggered && station.phone) {
-      setTriggered(true);
-      window.open(`https://wa.me/${station.phone}`, "_blank");
-    }
-  }, [isNearby, triggered, station.phone]);
+
 
   return (
     <group>
