@@ -108,7 +108,7 @@ const STATION_CONTENT: Record<string, StationContent> = {
       { 
         name: "Novacode Engine", 
         desc: "Marca y ecosistema de desarrollo web independiente enfocado en ingeniería de sistemas y arquitecturas robustas.",
-        tags: ["Docker", "Kubernetes", "CI/CD"],
+        tags: ["Next.js", "TypeScript", "Fullstack"],
         highlight: false,
       },
       { 
