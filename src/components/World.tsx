@@ -19,7 +19,7 @@ function FogEffect() {
 }
 
 function InfiniteGrid() {
-  const gridRef = useRef<THREE.GridHelper>(null);
+  const gridRef = useRef<any>(null);
   
   useFrame(({ camera }) => {
     if (gridRef.current) {
