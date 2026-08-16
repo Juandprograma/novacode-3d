@@ -91,8 +91,8 @@ export default function Home() {
   }, []);
 
   // Policy modal state
-  const [activePolicy, setActivePolicy] = useState<'legal' | 'privacy' | null>(null);
-  const handleOpenPolicy = useCallback((policy: 'legal' | 'privacy') => {
+  const [activePolicy, setActivePolicy] = useState<'legal' | 'privacy' | 'cookies' |null>(null);
+  const handleOpenPolicy = useCallback((policy: 'legal' | 'privacy' | 'cookies') => {
     setActivePolicy(policy);
   }, []);
   const handleClosePolicy = useCallback(() => {
@@ -198,7 +198,7 @@ export default function Home() {
             Política de Privacidad
           </button>
           <button
-            onClick={() => handleOpenPolicy('cookie')}
+            onClick={() => handleOpenPolicy('cookies')}
             className="text-xs hover:text-[#d4af37] transition-colors cursor-pointer"
             style={{ color: "#a1a1a1", fontFamily: "'JetBrains Mono', monospace" }}
           >
@@ -236,7 +236,7 @@ No compartimos, vendemos ni alquilamos su información personal a terceros sin s
 <br> "
       />
       <PolicyModal
-        isOpen={activePolicy === 'cookie'}
+        isOpen={activePolicy === 'cookies'}
         onClose={handleClosePolicy}
         title="Cookies"
         content="<p>
