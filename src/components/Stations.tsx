@@ -67,7 +67,7 @@ const STATIONS: Record<string, StationConfig> = {
     icon: MessageCircle,
     color: "#25D366",
     radius: 12,
-    phone: "573123745133",
+    phone: "573006779183cd",
   },
 };
 

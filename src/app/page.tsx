@@ -169,7 +169,7 @@ export default function Home() {
               <span className="hidden sm:inline">GitHub</span>
             </a>
             <a 
-              href="https://instagram.com/novacode" 
+              href="https://www.instagram.com/el_juaandii/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-sm hover:text-novacode-gold transition-colors"
@@ -197,6 +197,13 @@ export default function Home() {
           >
             Política de Privacidad
           </button>
+          <button
+            onClick={() => handleOpenPolicy('cookie')}
+            className="text-xs hover:text-[#d4af37] transition-colors cursor-pointer"
+            style={{ color: "#a1a1a1", fontFamily: "'JetBrains Mono', monospace" }}
+          >
+            Cookies
+          </button>
         </div>
       </footer>
 
@@ -205,14 +212,45 @@ export default function Home() {
         isOpen={activePolicy === 'legal'}
         onClose={handleClosePolicy}
         title="Aviso Legal"
-        content="<p>Contenido del Aviso Legal. Por favor, proporcione el contenido desde el documento de Google Drive.</p>"
+        content="<p>1. Aviso Legal
+NovaCode, operado por Juan Diego Mahecha Camargo en Bogotá, Colombia,
+ofrece servicios de desarrollo web, software y diseño interactivo. Al acceder a
+este sitio, el usuario acepta los términos aquí descritos.
+<br>
+2. Propiedad Intelectual
+Todo el contenido, diseño, código fuente, gráficos y elementos interactivos
+presentes en los sitios web desarrollados por NovaCode son propiedad
+exclusiva de sus respectivos dueños o de Juan Diego Mahecha Camargo, bajo
+las leyes de propiedad intelectual vigentes.</p>"
       />
       <PolicyModal
         isOpen={activePolicy === 'privacy'}
         onClose={handleClosePolicy}
         title="Política de Privacidad"
-        content="<p>Contenido de la Política de Privacidad. Por favor, proporcione el contenido desde el documento de Google Drive.</p>"
+        content="<p>
+Su privacidad es importante. NovaCode se compromete a proteger cualquier dato personal recopilado a través de formularios de contacto o herramientas interactivas. Estos datos se utilizan exclusivamente para:
+Gestionar solicitudes de servicios y consultas.
+Mejorar la experiencia del usuario en nuestras plataformas.
+Enviar información relevante sobre servicios contratados.
+No compartimos, vendemos ni alquilamos su información personal a terceros sin su consentimiento explícito, salvo requerimiento legal.
+<br> "
       />
+      <PolicyModal
+        isOpen={activePolicy === 'cookie'}
+        onClose={handleClosePolicy}
+        title="Cookies"
+        content="<p>
+4. Cookies y Tecnologías de Seguimiento
+NovaCode puede utilizar tecnologías estándar de análisis web para entender
+cómo se utilizan nuestras plataformas y optimizar el rendimiento técnico.
+<br>
+5. Modificaciones
+NovaCode se reserva el derecho de modificar estos términos en cualquier
+momento. La versión vigente será publicada directamente en este espacio.
+Contacto: Para cualquier consulta sobre estas políticas, puede ponerse en
+contacto a través de los medios oficiales dispuestos en el sitio web."
+      />
+      
     </main>
   );
 }

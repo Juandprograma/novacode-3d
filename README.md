@@ -75,4 +75,4 @@ Los colores principales están definidos en `tailwind.config.ts`:
 
 ## Contacto
 
-WhatsApp: https://wa.me/573123745133
+WhatsApp: https://wa.me/573006779183

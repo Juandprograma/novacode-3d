@@ -57,7 +57,7 @@ export function UI({ setMobileControl, onNavigate }: UIProps) {
               CONTACTO
             </button>
             <button
-              onClick={() => window.open("https://wa.me/573123745133?text=Hola%20Juan%20Diego,%20vengo%20de%20tu%20web%20Novacode%20y%20quiero%20una%20consultor%C3%ADa", "_blank")}
+              onClick={() => window.open("https://wa.me/573006779183?text=Hola%20Juan%20Diego,%20vengo%20de%20tu%20web%20Novacode%20y%20quiero%20una%20consultor%C3%ADa", "_blank")}
               className="flex items-center gap-2 px-4 py-2 bg-novacode-gold text-black text-sm font-medium rounded hover:bg-novacode-goldLight transition-colors min-h-[44px]"
               style={{ fontFamily: "'JetBrains Mono', monospace" }}
             >
@@ -100,7 +100,7 @@ export function UI({ setMobileControl, onNavigate }: UIProps) {
               CONTACTO
             </button>
             <button
-              onClick={() => window.open("https://wa.me/573123745133?text=Hola%20Juan%20Diego,%20vengo%20de%20tu%20web%20Novacode%20y%20quiero%20una%20consultor%C3%ADa", "_blank")}
+              onClick={() => window.open("https://wa.me/573006779183?text=Hola%20Juan%20Diego,%20vengo%20de%20tu%20web%20Novacode%20y%20quiero%20una%20consultor%C3%ADa", "_blank")}
               className="w-full mt-2 flex items-center justify-center gap-2 px-4 py-3 bg-novacode-gold text-black text-sm font-medium rounded min-h-[44px]"
             >
               <MessageCircle className="w-4 h-4" />

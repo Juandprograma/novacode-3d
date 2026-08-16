@@ -70,7 +70,7 @@ const STATION_CONTENT: Record<string, StationContent> = {
     subtitle: "Que escalan tu negocio",
     description: "Ingeniería de sistemas aplicada al desarrollo web. Arquitecturas robustas para soportar crecimiento exponencial.",
     buttons: [
-      { label: "CONSULTORÍA GRATIS", icon: MessageCircle, url: "https://wa.me/573123745133?text=Hola%20Juan%20Diego,%20vengo%20de%20tu%20web%20Novacode%20y%20quiero%20una%20consultor%C3%ADa", primary: true },
+      { label: "CONSULTORÍA GRATIS", icon: MessageCircle, url: "https://wa.me/573006779183?text=Hola%20Juan%20Diego,%20vengo%20de%20tu%20web%20Novacode%20y%20quiero%20una%20consultor%C3%ADa", primary: true },
       { label: "VER PROYECTOS", icon: Rocket, url: "#proyectos", primary: false },
     ],
     style: "gold",
@@ -143,7 +143,7 @@ const STATION_CONTENT: Record<string, StationContent> = {
     subtitle: "Tu proyecto merece tecnología de clase mundial",
     cta: {
       text: "🚀 INICIAR MI PROYECTO AHORA",
-      url: "https://wa.me/573123745133?text=Hola%20Juan%20Diego,%20vengo%20de%20tu%20web%20Novacode%20y%20quiero%20una%20consultor%C3%ADa",
+      url: "https://wa.me/573006779183?text=Hola%20Juan%20Diego,%20vengo%20de%20tu%20web%20Novacode%20y%20quiero%20una%20consultor%C3%ADa",
     },
     benefits: [
       "Primera consultoría gratuita",
