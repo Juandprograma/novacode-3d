@@ -1,0 +1,12 @@
+# dependencias
+/node_modules
+/.pnp
+.pnp.js
+
+# producción / build
+/.next/
+/out/
+/build
+
+# variables de entorno
+.env*
